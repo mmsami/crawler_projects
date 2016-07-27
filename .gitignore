@@ -8,8 +8,8 @@ share
 json
 os
 parser
-.json
+pip-selfcheck.json
 re
 sys
 urllib
-.idea
+.idea/
