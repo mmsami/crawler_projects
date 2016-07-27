@@ -1,0 +1,14 @@
+bin
+include
+lib
+local
+share
+.pyc
+.DS_Store
+json
+os
+parser
+.json
+re
+sys
+urllib
