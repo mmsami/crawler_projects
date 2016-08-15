@@ -20,6 +20,25 @@ def pos_neg(a, b, negative):
         return (a < 0 and b > 0) or (a > 0 and b < 0)
 
 
+def not_string(str):
+    """Given a string, return a new string where "not " has been added to the front.
+    However, if the string already begins with "not", return the string unchanged."""
+    if len(str) >= 3 and str[:3] == "not":
+        return str
+    return "not " + str
+
+
+def front_back(str):
+    """Given a string, return a new string where the first and last chars have been exchanged."""
+    if len(str) <= 1:
+        return str
+
+    mid = str[1:len(str) - 1]  # can be written as str[1:-1]
+
+    # last + mid + first
+    return str[len(str) - 1] + mid + str[0]
+
+
 if __name__ == '__main__':
     print diff21(23)
     print pos_neg(-4, -5, True)
